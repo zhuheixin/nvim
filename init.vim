@@ -43,7 +43,8 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 
   " highlight
-  Plug 'cateduo/vsdark.nvim'
+  " Plug 'cateduo/vsdark.nvim'
+  Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
   Plug 'jackguo380/vim-lsp-cxx-highlight'
   
   " lsp
@@ -93,8 +94,10 @@ let g:Lf_DevIconsFont = "DroidSansMono Nerd Font Mono"
 " ==== cateduo/vsdark.nvim ====
 
 set termguicolors
-let g:vsdark_style = "dark"
-colorscheme vsdark
+" let g:vsdark_style = "dark"
+" colorscheme vsdark
+colorscheme catppuccin " catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+
 
 
 " ==== jackguo380/vim-lsp-cxx-highlight ====
